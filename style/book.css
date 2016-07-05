@@ -1,0 +1,127 @@
+.block{
+	text-align: center;
+	padding: 2% 0;
+}
+
+.left{
+	margin: auto auto auto 0;
+}
+
+.center{
+	margin: auto;
+}
+
+.right{
+	margin: auto 0 auto auto;
+}
+
+img{
+	border-bottom: 2px solid #FF6D00 ;
+	font-weight: 800;
+}
+
+.banner{
+	color: #102361;
+}
+
+.userForm{
+	background-color : #FF6D00;
+	color: #ffffff;
+	margin: auto;
+}
+
+.userForm input{
+	color: #000000;
+}
+
+.jumbotron{
+	background-color: #102361 !important;
+	color: #ffffff;
+}
+
+.screen{
+	background-color: #FF6D00;
+    height: 1%;
+    margin-bottom: 7%;
+    padding: 0;
+}
+
+.flex-seatName{
+	flex-direction: column;
+	display: -webkit-flex;
+    display: flex;
+    width:100%;
+}
+
+.seatName{
+	flex-direction: row;
+	display: -webkit-flex;
+	display: flex;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+
+.seatName > div:first-child{
+	width: 15px;
+	margin-right:2%;
+}
+
+.seat{
+	flex-grow: 1;
+	width:5%;
+	height:20px;
+	border: 1px solid #ffffff;
+	margin: 0.9% 2% !important;
+}
+
+.seat:hover{
+	cursor: pointer;
+}
+
+.seat-number{
+	margin-top: -3%;
+    position: absolute;
+}
+
+.showAvail{
+	padding: 1%;
+    background-color: #102361;
+}
+
+div..flex-seatName > div{
+	margin:0 auto !important;
+	text-align: center;
+}
+
+.reserved{
+	background-color : #ff0000;
+}
+
+.selected{
+	background-color: #FF6D00;
+}
+
+.empty{
+	//background-color: #ffffff;
+}
+
+.instruction{
+	background-color: #102361;
+	color: #ffffff;
+	margin: 2% auto;
+}
+
+button{
+	background-color: #FF6D00 !important;
+	border-color: #FF6D00 !important;
+}
+
+.table-bordered td, .table-bordered th{
+    border-color: #FF6D00 !important;
+
+}
+
+.table{
+	border-color: #FF6D00 !important;
+}

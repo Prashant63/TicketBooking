@@ -1,0 +1,13 @@
+<div class="block center userForm">
+
+  <span>UserName</span>
+  <input type="text" ng-model="userName"></input>
+
+  <span>No Of Seats</span>
+  <input type="text" ng-model="seatsNumber"></input>
+
+  <span class="showAvail">Available Seats : {{availSeats}}</span>
+</div>
+<div class="block center"> 
+ <button type="button" class="btn btn-primary" ng-click="sendUserData()">Pick Your Seat</button>
+<div>

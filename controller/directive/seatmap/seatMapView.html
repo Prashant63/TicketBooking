@@ -1,0 +1,11 @@
+<div class="flex-seatName" ng-disabled="seatMapDisable">
+	<div ng-repeat="seat in seatName">
+		<div class="seatName">
+			<div>{{seat}}</div>
+			<div class="seat" ng-repeat="i in getTotalNumberSeats(seatsEachRow) track by $index" ng-click="toggleSeatSelect({seat: seat,index: $index}, $event)" ng-class="{reserved: reservedSeats.indexOf(seat+$index) != -1}">
+				<div class="seat-number" ng-if="seat === 'A'">{{$index}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<button ng-hide = "seatMapDisable" ng-click="confirm()" class="btn btn-primary"> Confirm Selection</button> 

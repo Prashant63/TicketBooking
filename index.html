@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style/book.css">
+		<script src="script/angular.min.js"></script>
+		<script src="script/app.js"></script>
+		<script src="service/bookingStorageService.js"></script>
+		<script src="controller/bookingCtrl.js"></script>
+		<script src="controller/directive/popup/popupDirective.js"></script>
+		<script src="controller/directive/seatmap/seatMapDirective.js"></script>
+		<script src="controller/directive/selection/selectionInfoDirective.js"></script>
+
+	</head>
+
+	<body ng-app="app">
+			<div ng-controller="bookingCtrl">
+				<div class="block center banner">
+					<img src="image/large-01.png"></img>
+					<div> MOVIE SEAT RESERVATION </div>
+				</div>
+
+				<popup get-user-info="getUserInfo" avail-seats="availSeats"></popup>
+
+
+				<div class="container" >
+					<div class="jumbotron">
+						<div class="block center screen">SCREEN</div>
+						<seat-map seat-name="seatName" seats-each-row="seatsEachRow" get-total-number-seats="getTotalNumberSeats" select-seat="selectSeat" seat-map-disable="seatMapDisable" confirm-seat-sel="confirmSeatSel" reserved-seats="reservedSeats" current-seat-count="currentSeatCount"></seat-map>
+					</div>
+
+					<div>
+						<div class="col-sm-12 instruction">
+							<div class="col-sm-4"><div class="seat selected" style="display:inline-block;"></div><span>Selected Seat</span></div>
+							<div class="col-sm-4"><div class="seat reserved" style="display:inline-block;"></div><span>Reserved Seat</span></div>
+							<div class="col-sm-4"><div class="seat empty" style="display:inline-block;"></div><span>Empty Seat</span></div>
+						</div>
+						<div>
+							<select-info users="users" modify-seat="modifySeat"></select-info>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
